@@ -11,12 +11,10 @@ RailTrip::RailTrip():Trip(),fnumber(""),OperatorD(""),distbcity(0) {
 
 int RailTrip::computeFare() {
     return 10*distbcity;
-
 }
 
 int RailTrip::computeTravelTime() {
     return distbcity/(500/60.0);
-
 }
 
 
