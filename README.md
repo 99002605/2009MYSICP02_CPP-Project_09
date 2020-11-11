@@ -6,3 +6,5 @@
 ![cppcheck-action](https://github.com/99002605/2009MYSICP02_CPP-Project_09/workflows/cppcheck-action/badge.svg?branch=main)
 
 ![Unit testing](https://github.com/99002605/2009MYSICP02_CPP-Project_09/workflows/Unit%20testing/badge.svg?branch=main)
+
+![Valgrind](https://github.com/99002605/2009MYSICP02_CPP-Project_09/workflows/Valgrind/badge.svg?branch=main)
