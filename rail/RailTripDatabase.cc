@@ -49,7 +49,6 @@ double RailTripDb ::computeMinTravelTime() {
     return minIter->computeTravelTime();
 }
 
-
 int RailTripDb ::countTripsByOperator(string op) {
     int c=0;
     list<RailTrip>::iterator iter;
