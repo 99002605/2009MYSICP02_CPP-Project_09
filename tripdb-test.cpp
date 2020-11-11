@@ -36,21 +36,4 @@ TEST_F(RailTripDbTest, CountByOperatorTest) {  //Just After Setup
     int count = trips.countTripsByOperator("Venkatadri");
     EXPECT_EQ(2, count);
 }
-TEST_F(RailTripDbTest, MaxFareTest) {           //Just After Setup
-    double maxFare = trips.computeMaxFare();
-    double minTime = trips.computeMinTravelTime();
-    EXPECT_EQ(12000, maxFare);         //For trip with distance of 1200 miles
-    EXPECT_EQ(42, minTime);            //For trip with distance of 350 miles
-}
-TEST_F(RailTripDbTest, AnotherTest) {         //Just After Setup
-    trips.addTrip("Chennai","Delhi","SG308", "Venkatadri", 1300);
-    trips.addTrip("Chennai","Bengaluru", "AI848", "Rajadani", 200);
-    int count = trips.countTripsByOperator("Rajadani");
-    double maxFare = trips.computeMaxFare();
-    double minTime = trips.computeMinTravelTime();
-    EXPECT_EQ(8, trips.countAll());
-    EXPECT_EQ(3, count);
-    EXPECT_EQ(13000, maxFare);
-    EXPECT_EQ(24, minTime);
-}
 } // namespace
